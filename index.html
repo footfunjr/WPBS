@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Prestige Beauty - Représentant officiel QEI+ en Guinée</title>
+    <meta name="description" content="World Prestige Beauty, représentant officiel des produits cosmétiques QEI+ en Guinée. Produits de beauté haut de gamme pour sublimer toutes les beautés africaines.">
+    <meta name="keywords" content="cosmétiques, QEI+, Guinée, Conakry, produits de beauté, soins peau, beauté africaine">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://worldprestigebeauty.com">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="World Prestige Beauty - Excellence Cosmétique">
+    <meta property="og:description" content="Représentant officiel des produits cosmétiques QEI+ en Guinée">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://worldprestigebeauty.com">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Preload Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" as="style">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Variables CSS */
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --pink: #FFC0CB;
+            --gold: #FFD700;
+            --light-pink: #ffebee;
+            --dark-gold: #e6c200;
+        }
+        
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--gold);
+            color: var(--black);
+            border: none;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-light {
+            background-color: var(--white);
+        }
+        
+        .section-dark {
+            background-color: var(--black);
+            color: var(--white);
+        }
+        
+        .section-pink {
+            background-color: var(--light-pink);
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            background-color: var(--white);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--gold);
+            flex-shrink: 0;
+        }
+        
+        .logo-circle img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--black);
+            white-space: nowrap;
+        }
+        
+        .nav-links {
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--black);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 70%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 100px;
+            height: calc(100vh - 80px);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container {
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-image {
+            height: 200px;
+            width: 100%;
+            background-color: var(--light-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 15px;
+        }
+        
+        .product-image img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-form {
+            flex: 1;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--black);
+            font-size: 1.2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background-color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--dark-gold);
+            transform: translateY(-3px);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--gold);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--gold);
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        .copyright a {
+            color: var(--gold);
+        }
+        
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content,
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 1.2rem;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: all 0.5s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text {
+                font-size: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <div class="logo-circle">
+                        <img src="images/logo.png" alt="World Prestige Beauty Logo" loading="lazy">
+                    </div>
+                    <span class="logo-text">World Prestige Beauty</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#products">Nos Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sublimez votre beauté avec l'excellence QEI+</h1>
+                <p>World Prestige Beauty, représentant officiel des produits cosmétiques QEI+ en Guinée</p>
+                <a href="#products" class="btn">Découvrir nos produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-light" id="about">
+        <div class="container">
+            <h2>À propos de nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>World Prestige Beauty est le représentant officiel des produits cosmétiques QEI+ en Guinée. Notre mission est de proposer des produits de beauté haut de gamme, des soins pour la peau et des cosmétiques de qualité destinés à sublimer toutes les beautés africaines.</p>
+                    <p>Nous croyons que chaque femme mérite de se sentir belle et confiante dans sa peau. C'est pourquoi nous sélectionnions rigoureusement des produits qui respectent la diversité des peaux africaines et mettent en valeur leur éclat naturel.</p>
+                    <p>Notre équipe de conseillers en beauté est formée pour vous accompagner dans le choix des produits les plus adaptés à vos besoins spécifiques.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Boutique World Prestige Beauty" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.211789074773!2d-13.578342924882305!3d9.549822365548242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1e9e0b5bb7e5c5%3A0x82d6b9b5c0c5c5c5!2sDixinn%2C%20Conakry%2C%20Guin%C3%A9e!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" title="Localisation de World Prestige Beauty à Conakry"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section section-pink" id="products">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product1.jpg" alt="Crème hydratante QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crème hydratante QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product2.jpg" alt="Sérum éclat QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sérum éclat QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="Masque purifiant QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Masque purifiant QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product4.jpg" alt="Gel nettoyant QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gel nettoyant QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product5.jpg" alt="Lotion tonique QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lotion tonique QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product6.jpg" alt="Crème de nuit QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crème de nuit QEI+</h3>
+                       <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product7.jpg" alt="BB crème QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>BB crème QEI+</h3>
+                       <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product8.jpg" alt="Poudre matifiante QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Poudre matifiante QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product9.jpg" alt="Rouge à lèvres QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rouge à lèvres QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+                
+                <!-- Produit 10 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product10.jpg" alt="Mascara QEI+" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mascara QEI+</h3>
+                        <a href="https://wa.me/224626380905?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20produits,%20puis-je%20en%20savoir%20plus%20?" class="btn btn-whatsapp">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-light" id="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Numéro de téléphone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>World Prestige Beauty</h3>
+                    <p>Représentant officiel des produits cosmétiques QEI+ en Guinée. Sublimez votre beauté avec l'excellence.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100063590333176" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/world_prestige_beauty" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/224626380905" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#products">Nos produits</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Dixinn, Conakry, Guinée</li>
+                        <li><i class="fas fa-phone"></i> +224 626 38 09 05</li>
+                        <li><i class="fas fa-phone"></i> +224 657 59 69 08</li>
+                        <li><i class="far fa-envelope"></i> contact@worldprestigebeauty.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 World Prestige Beauty — Tous droits réservés | Site créé par <a href="https://wa.me/224664873993" target="_blank">Seck Jr</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/224626380905?text=Bonjour,%20je%20souhaite" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Menu mobile - CODE CORRIGÉ
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            
+            if (navLinks.classList.contains('active')) {
+                hamburger.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+        
+        // Fermer le menu en cliquant sur un lien
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Récupérer les valeurs du formulaire
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Créer le message WhatsApp
+            const whatsappMessage = `Bonjour, je m'appelle ${name}. Mon numéro est ${phone}. ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/224626380905?text=${encodedMessage}`;
+            
+            // Ouvrir WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Réinitialiser le formulaire
+            this.reset();
+            
+            // Message de confirmation
+            alert('Merci pour votre message! Vous allez être redirigé vers WhatsApp.');
+        });
+        
+        // Animation au chargement de la page
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
